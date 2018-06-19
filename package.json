@@ -1,0 +1,22 @@
+{
+  "name": "gql-gen-resolvers",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "prestart": "npm run build",
+    "build": "tsc -p tsconfig.json",
+    "prebuild": "npm run schema",
+    "schema": "gql-gen --require ts-node/register --template @kamilkisiela/graphql-codegen-typescript-template --schema ./src/schema.ts --out ./src/models.ts"
+  },
+  "dependencies": {
+    "@kamilkisiela/graphql-codegen-typescript-template": "0.9.4",
+    "@types/graphql": "0.13.1",
+    "apollo-server": "2.0.0-rc.0",
+    "graphql": "0.13.2",
+    "graphql-code-generator": "0.9.3",
+    "ts-node": "6.1.1",
+    "typescript": "2.9.2"
+  }
+}
