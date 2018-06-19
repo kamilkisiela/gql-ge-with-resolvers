@@ -1,5 +1,5 @@
 {
-  "name": "gql-gen-resolvers",
+  "name": "gql-gen-with-resolvers",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
